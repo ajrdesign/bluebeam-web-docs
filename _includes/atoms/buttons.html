@@ -1,0 +1,163 @@
+<div class="page-header" id="buttons">
+          <h1>Buttons</h1>
+        </div>
+        <p>Buttons are classes are compounding so basically all buttons are exactly the same and you can swap out colors and sizes by adding or subtracting classes. This means there can be a large variety of buttons without a huge amount of repeated code. They are also 100% CSS so there is no requests for images needed.</p>
+        <p>These classes can be applied to any element to act as a "button" for example:</p>
+        <h6 class="subheading all-caps">Code</h6>
+        {% highlight html %}
+        <a href="#" class="btn"></a>
+        {% endhighlight %}
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Button</th>
+              <th>class=""</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><button type="button" class="btn">Default</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn</textarea></td>
+              <td>Default standard gray button</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-blue">Blue</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-blue</textarea></td>
+              <td>Standard blue button</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-blue btn-outline">Outline</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-blue btn-outline</textarea></td>
+              <td>Standard blue button without a fill</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-green">Green</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-green</textarea></td>
+              <td>Indicates a successful or positive action</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-green btn-outline">Outline</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-green btn-outline</textarea></td>
+              <td>Green button without a fill</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-orange">Orange</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-orange</textarea></td>
+              <td>Indicates caution should be taken with this action</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-orange btn-outline">Outline</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-orange btn-outline</textarea></td>
+              <td>Orange button without a fill</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-red">Red</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-red</textarea></td>
+              <td>Indicates a dangerous or potentially negative action</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-red btn-outline">Outline</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-red btn-outline</textarea></td>
+              <td>Red button without a fill</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-inverse">Inverse</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-inverse</textarea></td>
+              <td>Alternate dark gray button, not tied to a semantic action or use</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn">Outline</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn</textarea></td>
+              <td>Inverse button without a fill</td>
+            </tr>
+            <tr>
+              <td><button type="button" class="btn btn-link">Link</button></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-link</textarea></td>
+              <td>Deemphasize a button by making it look like a link while maintaining button behavior</td>
+            </tr>
+            <tr>
+              <td><a href="#" class="btn btn-static">Static</a></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn btn-static</textarea></td>
+              <td>Removes the transition roll over effect.</td>
+            </tr>
+            <tr>
+              <td><a class="btn btn-static" disabled>Disabled</a></td>
+              <td> <textarea class="code block" cols="40" rows="1">btn disabled</textarea></td>
+              <td>Removes all effects.</td>
+            </tr>
+          </tbody>
+        </table>
+        <h3 class="subheading">Button Sizes</h3>
+            <button type="button" class="btn btn-extreme">Extreme button</button>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <button type="button" class="btn btn-extreme">Extreme button</button>
+          {% endhighlight %}
+          <button type="button" class="btn btn-large">Large button</button>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <button type="button" class="btn btn-large">Large button</button>
+          {% endhighlight %}
+            <button type="button" class="btn">Default button</button>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <button type="button" class="btn">Default button</button>
+          {% endhighlight %}
+            <button type="button" class="btn btn-small">Small button</button>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <button type="button" class="btn btn-small">Small button</button>
+          {% endhighlight %}
+            <button type="button" class="btn btn-mini">Mini button</button>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <button type="button" class="btn btn-mini">Mini button</button>
+          {% endhighlight %}
+          <button class="btn btn-large btn-block" type="button">Block level button</button>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <button class="btn btn-large btn-block" type="button">Block level button</button>
+          {% endhighlight %}
+
+        <h3 class="subheading">Button Groups</h3>
+          <h5 class="subheading all-caps">Horizontal</h5>
+          <div class="btn-group">
+            <button class="btn btn-blue">Left</button>
+            <button class="btn btn-blue">Middle</button>
+            <button class="btn btn-blue">Right</button>
+          </div>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <div class="btn-group">
+            <button class="btn btn-blue">Left</button>
+            <button class="btn btn-blue">Middle</button>
+            <button class="btn btn-blue">Right</button>
+          </div>
+          {% endhighlight %}
+          <h5 class="subheading all-caps">Vertical</h5>
+          <div class="btn-group btn-group-vertical">
+            <button class="btn btn-blue"><i class="icon-align-left"></i></button>
+            <button class="btn btn-blue"><i class="icon-align-center"></i></button>
+            <button class="btn btn-blue"><i class="icon-align-right"></i></button>
+          </div>
+          <h6 class="subheading all-caps">Code</h6>
+          {% highlight html %}
+          <div class="btn-group btn-group-vertical">
+            <button class="btn btn-blue"><i class="icon-align-left"></i></button>
+            <button class="btn btn-blue"><i class="icon-align-center"></i></button>
+            <button class="btn btn-blue"><i class="icon-align-right"></i></button>
+          </div>
+          {% endhighlight %}
+          <h3 class="subheading">Button Dropdowns</h3>
+            <div class="btn-group">
+              <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+                Action
+                <span class="caret"></span>
+              </a>
+              <ul class="dropdown-menu">
+                <li><a href="#">This is a link</a></li>
+                <li><a href="#">This is a link</a></li>
+                <li><a href="#">This is a link</a></li>
+              </ul>
+            </div>

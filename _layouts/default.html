@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="body-dark">
+
+    {% include header.html %}
+    <div class="hero-unit">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12">
+            <h1>{{ page.title }}</h1>
+            <p>{{ page.lead }}</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-9">
+          {{ content }}
+        </div>
+        <div class="col-md-3" >
+          <nav class="docs-sidebar affix-top" data-spy="affix" data-offset-top="235">
+            <ul class="nav nav-tabs nav-stacked">
+              {% if page.nav == "atoms" %}
+                {% include nav/atoms.html %}
+              {% elsif page.nav == "molecules" %}
+                {% include nav/molecules.html %}
+              {% elsif page.nav == "organisms" %}
+                {% include nav/organisms.html %}
+              {% endif %}
+            </ul>
+            <a class="back-to-top" href="#top">
+              Back to top
+            </a>
+          </nav>
+        </div>
+      </div>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+
+</html>

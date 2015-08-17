@@ -1,0 +1,97 @@
+<div class="page-header" id="forms">
+    <h1>Forms</h1>
+  </div>
+  <h3 class="subheading">Standard Input</h3>
+    <form>
+      <label>Label</label>
+      <input type="text" placeholder="Type something…">
+      <h6 class="subheading all-caps">Code</h6>
+{% highlight html %}
+<label>Label name</label>
+<input type="text" placeholder="Type something…">
+{% endhighlight %}
+      <h3 class="subheading">Float Input</h3>
+      <div class="float-pattern">
+        <label for="email">Email</label>
+        <input type="text" id="email">
+      </div>
+      <h6 class="subheading all-caps">Code</h6>
+{% highlight html %}
+<div class="float-pattern">
+  <label for="email">Email</label>
+  <input id="email">
+</div>
+{% endhighlight %}
+      <label class="checkbox">
+        <input type="checkbox"> Check me out
+      </label>
+{% highlight html %}
+<label>Select</label>
+<label class="checkbox">
+  <input type="checkbox"> Check me out
+</label>
+{% endhighlight %}
+      <label>Select</label>
+      <select>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <h6 class="subheading all-caps">Code</h6>
+{% highlight html %}
+<label>Select</label>
+<select>
+  <option>1</option>
+  <option>2</option>
+  <option>3</option>
+  <option>4</option>
+  <option>5</option>
+</select>
+{% endhighlight %}
+      <label>Select Multiple</label>                 
+      <select multiple="multiple">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+      <label>Button</label>
+      <button type="submit" class="btn">Submit</button>
+      <legend>Search</legend>
+      <div class="block">
+        <input class="input-mini" type="text" placeholder=".input-mini">
+        <input class="input-small" type="text" placeholder=".input-small">
+        <input class="input-medium" type="text" placeholder=".input-medium">
+        <input class="input-large" type="text" placeholder=".input-large">
+        <input class="input-xlarge" type="text" placeholder=".input-xlarge">
+        <input class="input-xxlarge" type="text" placeholder=".input-xxlarge">
+        <input type="text" class="input-medium search-query">
+        <button type="submit" class="btn">Search</button>
+      </div>
+    </form>
+
+    <form class="form-inline">
+      <legend>Inline Form</legend>
+      <input type="text" class="input-small" placeholder="Email">
+      <input type="password" class="input-small" placeholder="Password">
+      <label class="checkbox">
+        <input type="checkbox"> Remember me
+      </label>
+      <button type="submit" class="btn">Sign in</button>
+    </form>
+    <label>Prepend and Append on a text area</label>
+
+    <div class="input-prepend input-append">
+      <span class="add-on">$</span><input id="appendedPrependedInput" size="8" type="text"><span class="add-on">.00</span>
+    </div>
+    <hr>
+    <h3 class="subheading">Status</h3>
+    <input type="text" class="has-success" placeholder=".has-success">
+    <p> <textarea class="code block" cols="40" rows="1">&lt;input type="text" class="has-success"&gt;</textarea></p>
+    <input type="text" class="has-error" placeholder=".has-error">
+    <p> <textarea class="code block" cols="40" rows="1">&lt;input type="text" class="has-error"&gt;</textarea></p>
+    <input type="text" class="has-warning" placeholder=".has-warning">
+    <p> <textarea class="code block" cols="40" rows="1">&lt;input type="text" class="has-warning"&gt;</textarea></p>

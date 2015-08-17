@@ -1,0 +1,32 @@
+/*	Color Styles	*/
+
+.swatch {
+	height: 100px;
+	width: 100px;
+	position: relative;
+	display: inline-block;
+	text-align: center;
+}
+
+.swatch p {
+	height: 23px;
+	margin: auto;
+	position: absolute;
+	top: 0; left: 0; bottom: 0; right: 0;
+}
+
+/* Highlight styling */
+.highlight {
+	pre {
+		background: transparent;
+		border: none;
+		code {
+			color: $light-gray;
+		}
+	}
+	
+}
+
+section {
+	margin-bottom: 60px;
+}

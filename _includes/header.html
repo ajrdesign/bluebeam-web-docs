@@ -1,0 +1,26 @@
+<header class="header bg-black">
+  <div class="navbar">
+    <div class="navbar-inner navbar-bluebeam">
+      <div class="container">
+        <a href="" data-toggle="collapse" data-target=".nav-collapse" class="btn btn-navbar btn-inverse"></a>
+        <a href="{{ site.baseurl }}/index.html" class="brand">{{ site.title }}</a>
+        <div id="demo-nav" class="nav-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li{% if page.nav == "atoms" %} class="active"{% endif %}>
+              <a href="../atoms.html">Atoms</a>
+            </li>
+            <li{% if page.nav == "molecules" %} class="active"{% endif %}>
+              <a href="../molecules.html">Molecules</a>
+            </li>
+            <li{% if page.nav == "organisms" %} class="active"{% endif %}>
+              <a href="../organisms.html">Organisms</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+        
+    </div>
+  </div>
+
+
+</header>
